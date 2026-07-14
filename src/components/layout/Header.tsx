@@ -93,7 +93,11 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <Button href={site.headerCta.href} className="mt-5 w-full">
+            <Button
+              href={site.headerCta.href}
+              onClick={() => setOpen(false)}
+              className="mt-5 w-full"
+            >
               {site.headerCta.label}
             </Button>
           </div>
