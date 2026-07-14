@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Why Hive Metric",
+  "heading": "Not another marketing vendor",
+  "subheading": "Most agencies sell ad spend. We build the systems that make growth repeatable — the strategy, the technology, and the operations underneath it.",
+  "points": [
+    {
+      "title": "Systems, not campaigns",
+      "description": "We architect end-to-end growth systems — marketing, CRM, sales, and automation working as one machine, not disconnected vendors."
+    },
+    {
+      "title": "Built on your numbers",
+      "description": "Every recommendation is grounded in your unit economics, not industry averages. We report on revenue, not impressions."
+    },
+    {
+      "title": "AI-native execution",
+      "description": "We build with modern AI tooling from day one, so your operations get faster and leaner as we scale — not just louder."
+    },
+    {
+      "title": "Senior strategy, real accountability",
+      "description": "You work directly with senior operators who've run growth before, not a rotating account manager reading from a template."
+    }
+  ]
+}

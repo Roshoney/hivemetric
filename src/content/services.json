@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "ai-automation",
+    "icon": "automation",
+    "title": "AI Automation",
+    "summary": "We design and deploy AI-driven workflows that remove manual work from your operations — from lead qualification to reporting.",
+    "bullets": [
+      "Custom AI agents for lead triage & follow-up",
+      "Workflow automation across your existing tools",
+      "Internal reporting & ops dashboards",
+      "AI-assisted customer support pipelines"
+    ]
+  },
+  {
+    "slug": "performance-marketing",
+    "icon": "performance",
+    "title": "Performance Marketing",
+    "summary": "Full-funnel paid media strategy on Meta, Google, and LinkedIn — built around measurable revenue outcomes, not vanity metrics.",
+    "bullets": [
+      "Meta & Instagram Ads management",
+      "Google Search & YouTube campaigns",
+      "Creative testing & iteration systems",
+      "Attribution & ROAS reporting"
+    ]
+  },
+  {
+    "slug": "crm-implementation",
+    "icon": "crm",
+    "title": "CRM Implementation",
+    "summary": "We build and configure the CRM backbone your sales team actually uses — pipelines, automations, and reporting aligned to how you sell.",
+    "bullets": [
+      "HubSpot, GoHighLevel & Salesforce setup",
+      "Pipeline & deal-stage architecture",
+      "Automated nurture sequences",
+      "Sales & marketing data alignment"
+    ]
+  },
+  {
+    "slug": "sales-systems",
+    "icon": "sales",
+    "title": "Sales Systems",
+    "summary": "Repeatable sales infrastructure — scripts, sequences, and scheduling systems — so growth doesn't depend on any one person.",
+    "bullets": [
+      "Outbound sequence design",
+      "Booking & scheduling automation",
+      "Sales enablement playbooks",
+      "Close-rate optimization"
+    ]
+  },
+  {
+    "slug": "lead-generation",
+    "icon": "leadgen",
+    "title": "Lead Generation",
+    "summary": "Predictable pipelines of qualified leads, engineered through paid, organic, and outbound channels working together.",
+    "bullets": [
+      "Multi-channel lead engines",
+      "Landing page & offer design",
+      "Lead scoring & qualification",
+      "Cost-per-lead optimization"
+    ]
+  },
+  {
+    "slug": "funnel-optimization",
+    "icon": "funnel",
+    "title": "Funnel Optimization",
+    "summary": "We audit and rebuild the path from click to customer — identifying where revenue is leaking and fixing it with data, not guesswork.",
+    "bullets": [
+      "Conversion rate audits",
+      "Landing page & checkout testing",
+      "Drop-off & funnel analytics",
+      "Offer & pricing structure review"
+    ]
+  },
+  {
+    "slug": "business-strategy",
+    "icon": "strategy",
+    "title": "Business Strategy",
+    "summary": "Growth planning grounded in your numbers — positioning, offer strategy, and go-to-market roadmaps built for the next stage.",
+    "bullets": [
+      "Growth roadmap & goal-setting",
+      "Positioning & offer strategy",
+      "Market & competitor analysis",
+      "Quarterly growth planning"
+    ]
+  },
+  {
+    "slug": "analytics-operations",
+    "icon": "analytics",
+    "title": "Analytics & Operational Automation",
+    "summary": "Unified dashboards and back-office automation that give you one source of truth across marketing, sales, and operations.",
+    "bullets": [
+      "Cross-channel analytics dashboards",
+      "Marketing & sales data integration",
+      "Operational workflow automation",
+      "Custom reporting for leadership"
+    ]
+  }
+]

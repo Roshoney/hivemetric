@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Practice Director",
+    "company": "Aurora Dental Group",
+    "quote": "For the first time we can see exactly which ads turn into booked patients, not just clicks. Hive Metric didn't just run our ads — they rebuilt how we think about growth.",
+    "avatar": null,
+    "isSample": true
+  },
+  {
+    "name": "Managing Partner",
+    "company": "Ledger & Vale",
+    "quote": "We took on 30% more clients this year without hiring a single extra admin. The automation work paid for itself within the first month.",
+    "avatar": null,
+    "isSample": true
+  },
+  {
+    "name": "VP of Sales",
+    "company": "Solace Home Services",
+    "quote": "Every lead now gets followed up automatically. We stopped losing deals to slow response times, and I finally trust our pipeline numbers.",
+    "avatar": null,
+    "isSample": true
+  },
+  {
+    "name": "Head of Growth",
+    "company": "Northbound",
+    "quote": "We finally make growth decisions from one number, not six conflicting spreadsheets. Hive Metric feels like an extension of our own team.",
+    "avatar": null,
+    "isSample": true
+  }
+]

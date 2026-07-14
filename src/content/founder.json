@@ -1,0 +1,15 @@
+{
+  "name": "Ragul",
+  "role": "Founder & CEO, Hive Metric",
+  "photo": "/founder/founder-photo.jpg",
+  "bio": "After years of leading growth and marketing operations for businesses across healthcare, home services, and B2B SaaS, our founder started Hive Metric on a simple premise: businesses don't need more ads, they need better systems. Hive Metric was built to give growing companies access to the same integrated strategy, automation, and marketing infrastructure usually reserved for venture-backed teams.",
+  "quote": "Marketing without systems is just spend. Our job is to build the machine that makes growth predictable.",
+  "credentials": [
+    "10+ years in growth marketing & operations",
+    "Managed 8-figures in cumulative ad spend",
+    "Built CRM & automation systems across 6 industries"
+  ],
+  "social": {
+    "linkedin": "https://linkedin.com/in/hivemetric-founder"
+  }
+}

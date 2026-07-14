@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "aurora-dental-group",
+    "isSample": true,
+    "client": "Aurora Dental Group",
+    "category": "Meta Ads",
+    "industry": "Healthcare",
+    "title": "Rebuilding a multi-location patient acquisition engine",
+    "summary": "A full-funnel Meta Ads rebuild paired with CRM automation cut cost-per-booked-appointment by more than half across five clinic locations.",
+    "featuredImage": null,
+    "problem": "Aurora was spending heavily on Meta Ads with no lead-to-appointment tracking, so budget kept shifting toward the loudest metric — clicks — instead of booked patients.",
+    "approach": "We rebuilt the campaign structure around booked appointments as the optimization event, connected ad data to their CRM, and redesigned the booking funnel to remove friction.",
+    "execution": "New creative testing system across 5 clinics, CRM-based conversion tracking via server-side events, automated appointment-reminder sequences, and a weekly revenue-attribution dashboard.",
+    "metrics": [
+      { "value": "58%", "label": "Lower cost per booking" },
+      { "value": "3.1x", "label": "Return on ad spend" },
+      { "value": "5", "label": "Clinic locations scaled" }
+    ],
+    "testimonialQuote": "For the first time we can see exactly which ads turn into booked patients, not just clicks.",
+    "testimonialAuthor": "Practice Director, Aurora Dental Group",
+    "gallery": [],
+    "featured": true,
+    "date": "2025-09"
+  },
+  {
+    "slug": "ledger-vale-accounting",
+    "isSample": true,
+    "client": "Ledger & Vale",
+    "category": "Automation",
+    "industry": "Professional Services",
+    "title": "Automating client onboarding for a growing accounting firm",
+    "summary": "An AI-assisted intake and onboarding system replaced 12+ hours of manual admin work per week, without adding headcount.",
+    "featuredImage": null,
+    "problem": "Every new client meant manual document collection, scheduling back-and-forth, and duplicate data entry across three separate tools.",
+    "approach": "We mapped the full onboarding journey and designed an automation layer connecting their intake form, CRM, and document storage — with AI handling first-pass data extraction.",
+    "execution": "Automated intake forms, AI-assisted document parsing, CRM pipeline automation, and Slack notifications for the team when action was needed.",
+    "metrics": [
+      { "value": "12+ hrs", "label": "Saved per week" },
+      { "value": "4 days", "label": "Faster client onboarding" },
+      { "value": "0", "label": "Additional headcount required" }
+    ],
+    "testimonialQuote": "We took on 30% more clients this year without hiring a single extra admin.",
+    "testimonialAuthor": "Managing Partner, Ledger & Vale",
+    "gallery": [],
+    "featured": true,
+    "date": "2025-06"
+  },
+  {
+    "slug": "solace-home-services",
+    "isSample": true,
+    "client": "Solace Home Services",
+    "category": "CRM",
+    "industry": "Home Services",
+    "title": "A CRM built around how the sales team actually sells",
+    "summary": "A ground-up GoHighLevel implementation gave a 14-person sales team one shared pipeline, automated follow-up, and real close-rate visibility.",
+    "featuredImage": null,
+    "problem": "Leads were scattered across spreadsheets and personal phones. Follow-up was inconsistent, and leadership had no visibility into true close rates.",
+    "approach": "We designed a pipeline structure matching their actual sales stages, migrated historical data, and layered in automated follow-up sequences for every stage.",
+    "execution": "Custom GoHighLevel pipeline architecture, automated SMS/email nurture sequences, call tracking integration, and a leadership dashboard for close-rate reporting.",
+    "metrics": [
+      { "value": "41%", "label": "Increase in close rate" },
+      { "value": "100%", "label": "Lead follow-up within 5 min" },
+      { "value": "14", "label": "Reps onboarded to one system" }
+    ],
+    "testimonialQuote": "Every lead now gets followed up automatically. We stopped losing deals to slow response times.",
+    "testimonialAuthor": "VP of Sales, Solace Home Services",
+    "gallery": [],
+    "featured": true,
+    "date": "2025-03"
+  },
+  {
+    "slug": "northbound-saas",
+    "isSample": true,
+    "client": "Northbound",
+    "category": "Analytics",
+    "industry": "B2B SaaS",
+    "title": "One dashboard replacing six spreadsheets",
+    "summary": "A unified analytics layer connecting marketing, product, and revenue data gave leadership a single source of truth for growth decisions.",
+    "featuredImage": null,
+    "problem": "Marketing, sales, and product data lived in separate tools. Leadership spent hours each month reconciling numbers before a single decision could be made.",
+    "approach": "We built a centralized data pipeline connecting their ad platforms, CRM, and product analytics into one live reporting layer.",
+    "execution": "Cross-platform data integration, a real-time executive dashboard, automated weekly reporting emails, and self-serve views for each department.",
+    "metrics": [
+      { "value": "6 to 1", "label": "Spreadsheets replaced by one dashboard" },
+      { "value": "9 hrs", "label": "Saved on monthly reporting" },
+      { "value": "100%", "label": "Data consistency across teams" }
+    ],
+    "testimonialQuote": "We finally make growth decisions from one number, not six conflicting spreadsheets.",
+    "testimonialAuthor": "Head of Growth, Northbound",
+    "gallery": [],
+    "featured": false,
+    "date": "2025-01"
+  }
+]

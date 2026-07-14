@@ -1,0 +1,65 @@
+{
+  "hero": {
+    "badge": "Growth systems for ambitious businesses",
+    "headlineBefore": "We build the ",
+    "headlineHighlight": "business growth systems",
+    "headlineAfter": " behind predictable revenue",
+    "description": "Hive Metric is a growth partner — not another ad vendor. We combine AI automation, performance marketing, CRM implementation, and sales systems into one operating system built around your revenue."
+  },
+  "about": {
+    "eyebrow": "About Hive Metric",
+    "title": "A growth partner, not a marketing vendor",
+    "paragraphs": [
+      "Most agencies sell you a channel — ads, or a CRM, or a funnel — and leave the rest to you. Hive Metric was built on a different premise: growth breaks down when the systems underneath it don't talk to each other.",
+      "We work as an embedded growth team — architecting the marketing, sales, and operational infrastructure that turns spend into predictable, compounding revenue. That means performance marketing that feeds a real CRM. Automation that removes manual work instead of adding another dashboard. Strategy grounded in your numbers, not industry benchmarks.",
+      "The result: a business that can scale its growth without scaling its headcount or its chaos."
+    ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Every system your growth depends on",
+    "description": "From first click to closed deal, we build and operate the infrastructure in between."
+  },
+  "process": {
+    "eyebrow": "Our Process",
+    "title": "A clear path from audit to scale",
+    "description": "No guesswork, no black box — every engagement follows the same disciplined process."
+  },
+  "caseStudies": {
+    "eyebrow": "Case Studies",
+    "title": "Real systems, real results",
+    "description": "A look at the growth infrastructure we've built for clients across industries.",
+    "ctaLabel": "View full portfolio"
+  },
+  "resultsMetrics": {
+    "eyebrow": "Results & Metrics",
+    "title": "Growth you can measure",
+    "description": "We report on revenue outcomes, not vanity metrics — the numbers below reflect work across our client portfolio."
+  },
+  "testimonials": {
+    "eyebrow": "Client Testimonials",
+    "title": "What it's like to work with us"
+  },
+  "industries": {
+    "eyebrow": "Industries We Serve",
+    "title": "Growth systems built for your market",
+    "description": "Every industry sells differently — our systems are configured around how your buyers actually decide."
+  },
+  "faqs": {
+    "eyebrow": "FAQ",
+    "title": "Common questions"
+  },
+  "contact": {
+    "eyebrow": "Get Started",
+    "title": "Book your growth consultation",
+    "description": "Tell us where your business is today and where you want it to go. We'll review your systems and come back with a clear point of view — no generic pitch decks."
+  },
+  "founder": {
+    "label": "From the Founder"
+  },
+  "portfolioPage": {
+    "eyebrow": "Portfolio",
+    "title": "Growth systems, in the wild",
+    "description": "Every project below reflects a real system we designed and operated — filter by the kind of work you're exploring."
+  }
+}

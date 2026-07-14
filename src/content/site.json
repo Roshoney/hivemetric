@@ -1,0 +1,56 @@
+{
+  "name": "Hive Metric",
+  "shortName": "Hive Metric",
+  "tagline": "Business growth systems, engineered.",
+  "description": "Hive Metric is a growth systems partner for ambitious businesses — combining AI automation, performance marketing, CRM implementation, and sales systems into one operating system for growth.",
+  "url": "https://www.hivemetric.com",
+  "locale": "en_US",
+  "founded": "2023",
+  "email": "hello@hivemetric.com",
+  "phone": "+1 (555) 010-2938",
+  "addressLine": "Remote-first, serving clients internationally",
+  "calendlyUrl": "https://cal.com/hivemetric/consultation",
+  "social": {
+    "linkedin": "https://linkedin.com/company/hivemetric",
+    "instagram": "https://instagram.com/hivemetric",
+    "x": "https://x.com/hivemetric",
+    "youtube": "https://youtube.com/@hivemetric"
+  },
+  "nav": [
+    { "label": "About", "href": "/#about" },
+    { "label": "Services", "href": "/#services" },
+    { "label": "Process", "href": "/#process" },
+    { "label": "Portfolio", "href": "/portfolio" },
+    { "label": "Results", "href": "/#results" },
+    { "label": "FAQ", "href": "/#faq" }
+  ],
+  "footerLinks": {
+    "company": [
+      { "label": "About", "href": "/#about" },
+      { "label": "Founder", "href": "/#founder" },
+      { "label": "Portfolio", "href": "/portfolio" },
+      { "label": "Contact", "href": "/#contact" }
+    ],
+    "services": [
+      { "label": "AI Automation", "href": "/#services" },
+      { "label": "Performance Marketing", "href": "/#services" },
+      { "label": "CRM Implementation", "href": "/#services" },
+      { "label": "Sales Systems", "href": "/#services" }
+    ]
+  },
+  "headerCta": { "label": "Book a Consultation", "href": "/#contact" },
+  "seo": {
+    "titleTemplate": "%s | Hive Metric",
+    "defaultTitle": "Hive Metric — Business Growth Systems Through AI Automation & Performance Marketing",
+    "keywords": [
+      "growth systems agency",
+      "AI automation for business",
+      "performance marketing",
+      "CRM implementation",
+      "sales systems",
+      "lead generation agency",
+      "funnel optimization",
+      "business strategy consulting"
+    ]
+  }
+}

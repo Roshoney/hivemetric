@@ -1,0 +1,6 @@
+[
+  { "value": 12, "suffix": "M+", "prefix": "$", "label": "Ad spend managed" },
+  { "value": 3.4, "suffix": "x", "prefix": "", "label": "Average client ROAS" },
+  { "value": 150, "suffix": "+", "prefix": "", "label": "Automations deployed" },
+  { "value": 40, "suffix": "%", "prefix": "", "label": "Avg. reduction in cost-per-lead" }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "step": "01",
+    "title": "Discovery & Audit",
+    "description": "We map your current marketing, sales, and operational systems to find where growth is being lost — before recommending a single tactic."
+  },
+  {
+    "step": "02",
+    "title": "Growth Architecture",
+    "description": "We design the specific system — channels, CRM structure, automations, and reporting — tailored to your business model and goals."
+  },
+  {
+    "step": "03",
+    "title": "Build & Implementation",
+    "description": "Our team builds the campaigns, integrations, and automations, integrating directly with your existing tools and team."
+  },
+  {
+    "step": "04",
+    "title": "Launch & Optimize",
+    "description": "We launch in controlled phases, testing and refining creative, funnels, and automations against real performance data."
+  },
+  {
+    "step": "05",
+    "title": "Scale & Report",
+    "description": "With systems proven, we scale spend and scope — with transparent, revenue-focused reporting delivered on a fixed cadence."
+  }
+]
