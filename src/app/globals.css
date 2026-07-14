@@ -96,6 +96,21 @@ body {
   color: transparent;
 }
 
+.nav-founder-glow {
+  color: var(--gold-400);
+  animation: founder-glow-pulse 2.6s ease-in-out infinite;
+}
+
+@keyframes founder-glow-pulse {
+  0%,
+  100% {
+    text-shadow: 0 0 8px rgba(232, 184, 75, 0.45), 0 0 18px rgba(232, 184, 75, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(232, 184, 75, 0.8), 0 0 28px rgba(232, 184, 75, 0.4);
+  }
+}
+
 .bg-grain {
   position: relative;
 }

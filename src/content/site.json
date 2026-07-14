@@ -22,6 +22,7 @@
     { "label": "Process", "href": "/#process" },
     { "label": "Portfolio", "href": "/portfolio" },
     { "label": "Results", "href": "/#results" },
+    { "label": "Founder", "href": "/#founder" },
     { "label": "FAQ", "href": "/#faq" }
   ],
   "footerLinks": {

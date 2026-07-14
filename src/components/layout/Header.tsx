@@ -39,7 +39,11 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-foreground/75 hover:text-foreground transition-colors"
+                className={
+                  link.label === "Founder"
+                    ? "text-sm font-medium nav-founder-glow transition-colors"
+                    : "text-sm text-foreground/75 hover:text-foreground transition-colors"
+                }
               >
                 {link.label}
               </Link>
@@ -80,7 +84,11 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="py-3 text-base text-foreground/85 border-b border-border/60 last:border-0"
+                className={
+                  link.label === "Founder"
+                    ? "py-3 text-base font-medium nav-founder-glow border-b border-border/60 last:border-0"
+                    : "py-3 text-base text-foreground/85 border-b border-border/60 last:border-0"
+                }
               >
                 {link.label}
               </Link>
