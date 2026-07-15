@@ -8,9 +8,9 @@ export function FounderSection() {
 
   return (
     <section id="founder" className="py-24 sm:py-32 border-t border-border bg-elevated/40">
-      <Container className="grid grid-cols-1 gap-12 lg:grid-cols-[280px_1fr] lg:gap-16">
+      <Container className="grid grid-cols-1 gap-12 lg:grid-cols-[320px_1fr] lg:gap-16">
         <Reveal className="flex flex-col items-center gap-5 lg:items-start">
-          <div className="relative h-40 w-40 overflow-hidden rounded-2xl border border-border-strong bg-elevated-2">
+          <div className="relative h-60 w-60 overflow-hidden rounded-2xl border border-border-strong bg-elevated-2">
             {founder.photo ? (
               <Image src={founder.photo} alt={founder.name} fill className="object-cover object-top" />
             ) : (
