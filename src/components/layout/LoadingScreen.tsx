@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -62,27 +62,31 @@ function playRevealTone() {
 export function LoadingScreen() {
   const [phase, setPhase] = useState<"hidden" | "in" | "out">("hidden");
   const [reduced, setReduced] = useState(false);
+  const exitTimeRef = useRef(650);
+  const timersRef = useRef<{ exit?: ReturnType<typeof setTimeout>; remove?: ReturnType<typeof setTimeout> }>({});
 
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (sessionStorage.getItem(SESSION_KEY)) return;
 
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     sessionStorage.setItem(SESSION_KEY, "1");
 
-    const holdTime = reduced ? 150 : 2000;
-    const exitTime = reduced ? 200 : 650;
-    const soundDelay = reduced ? 0 : 850;
+    const holdTime = reducedMotion ? 150 : 2000;
+    const exitTime = reducedMotion ? 200 : 650;
+    const soundDelay = reducedMotion ? 0 : 850;
+    exitTimeRef.current = exitTime;
 
     const showTimer = setTimeout(() => {
-      setReduced(reduced);
+      setReduced(reducedMotion);
       setPhase("in");
     }, 0);
     const soundTimer = setTimeout(() => {
-      if (!reduced) playRevealTone();
+      if (!reducedMotion) playRevealTone();
     }, soundDelay);
     const exitTimer = setTimeout(() => setPhase("out"), holdTime);
     const removeTimer = setTimeout(() => setPhase("hidden"), holdTime + exitTime);
+    timersRef.current = { exit: exitTimer, remove: removeTimer };
 
     return () => {
       clearTimeout(showTimer);
@@ -99,6 +103,16 @@ export function LoadingScreen() {
     };
   }, [phase]);
 
+  // Let an impatient tap/click skip straight to the exit instead of the tap
+  // being silently absorbed by the full-screen overlay for the ~2s hold.
+  const handleSkip = () => {
+    if (phase !== "in") return;
+    clearTimeout(timersRef.current.exit);
+    clearTimeout(timersRef.current.remove);
+    setPhase("out");
+    timersRef.current.remove = setTimeout(() => setPhase("hidden"), exitTimeRef.current);
+  };
+
   if (phase === "hidden") return null;
 
   const isIn = phase === "in";
@@ -112,6 +126,7 @@ export function LoadingScreen() {
     <motion.div
       role="presentation"
       aria-hidden="true"
+      onClick={handleSkip}
       style={{ pointerEvents: phase === "out" ? "none" : "auto" }}
       className="fixed inset-0 z-[200] flex items-center justify-center overflow-hidden bg-background"
       initial={{ opacity: 1 }}

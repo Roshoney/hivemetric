@@ -103,7 +103,10 @@ export function Header() {
           header creates a CSS containing block for fixed-position descendants,
           which would collapse this overlay's bottom-0 height to ~0. */}
       {open && (
-        <div className="fixed inset-x-0 top-18 bottom-0 z-40 lg:hidden bg-background overflow-y-auto overscroll-contain touch-pan-y">
+        <div
+          className="fixed inset-x-0 top-18 z-40 lg:hidden bg-background overflow-y-auto overscroll-contain touch-pan-y"
+          style={{ height: "calc(100dvh - 4.5rem)" }}
+        >
           <div className="container-px py-6 flex flex-col gap-1">
             {site.nav.map((link) => (
               <Link
