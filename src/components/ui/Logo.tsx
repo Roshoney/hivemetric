@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export function Logo({
   size = 34,
@@ -36,10 +39,21 @@ export function Logo({
     </span>
   );
 
+  const pathname = usePathname();
+
   if (href === null) return content;
 
+  const handleClick = () => {
+    // Clicking the logo while already on the target page (e.g. scrolled down
+    // the homepage with no hash in the URL) is a same-URL Link navigation,
+    // which Next.js treats as a no-op and won't scroll to top on its own.
+    if (href === pathname) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
-    <Link href={href} aria-label="Hive Metric home" className="inline-flex">
+    <Link href={href} aria-label="Hive Metric home" className="inline-flex" onClick={handleClick}>
       {content}
     </Link>
   );
