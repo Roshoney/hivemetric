@@ -18,9 +18,35 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    if (!open) return;
+
+    // Plain `overflow: hidden` doesn't reliably stop background scroll/rubber-band
+    // on iOS Safari, which can shift page content mid-tap and cause taps on the
+    // menu to silently miss. Pin the body in place instead, and restore the exact
+    // scroll position on close.
+    const scrollY = window.scrollY;
+    const body = document.body;
+    const previous = {
+      position: body.style.position,
+      top: body.style.top,
+      left: body.style.left,
+      right: body.style.right,
+      width: body.style.width,
+    };
+
+    body.style.position = "fixed";
+    body.style.top = `-${scrollY}px`;
+    body.style.left = "0";
+    body.style.right = "0";
+    body.style.width = "100%";
+
     return () => {
-      document.body.style.overflow = "";
+      body.style.position = previous.position;
+      body.style.top = previous.top;
+      body.style.left = previous.left;
+      body.style.right = previous.right;
+      body.style.width = previous.width;
+      window.scrollTo(0, scrollY);
     };
   }, [open]);
 
@@ -57,7 +83,7 @@ export function Header() {
           </div>
 
           <button
-            className="lg:hidden flex h-11 w-11 items-center justify-center text-foreground -mr-2"
+            className="lg:hidden flex h-11 w-11 items-center justify-center text-foreground -mr-2 touch-manipulation"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
@@ -77,7 +103,7 @@ export function Header() {
           header creates a CSS containing block for fixed-position descendants,
           which would collapse this overlay's bottom-0 height to ~0. */}
       {open && (
-        <div className="fixed inset-x-0 top-18 bottom-0 z-40 lg:hidden bg-background overflow-y-auto">
+        <div className="fixed inset-x-0 top-18 bottom-0 z-40 lg:hidden bg-background overflow-y-auto overscroll-contain touch-pan-y">
           <div className="container-px py-6 flex flex-col gap-1">
             {site.nav.map((link) => (
               <Link
@@ -86,8 +112,8 @@ export function Header() {
                 onClick={() => setOpen(false)}
                 className={
                   link.label === "Founder"
-                    ? "py-3 text-base font-medium nav-founder-glow border-b border-border/60 last:border-0"
-                    : "py-3 text-base text-foreground/85 border-b border-border/60 last:border-0"
+                    ? "py-3 text-base font-medium nav-founder-glow border-b border-border/60 last:border-0 touch-manipulation"
+                    : "py-3 text-base text-foreground/85 border-b border-border/60 last:border-0 touch-manipulation"
                 }
               >
                 {link.label}
@@ -96,7 +122,7 @@ export function Header() {
             <Button
               href={site.headerCta.href}
               onClick={() => setOpen(false)}
-              className="mt-5 w-full"
+              className="mt-5 w-full touch-manipulation"
             >
               {site.headerCta.label}
             </Button>
