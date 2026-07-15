@@ -96,19 +96,13 @@ body {
   color: transparent;
 }
 
+/* Static, not animated: a continuously-running text-shadow pulse forces a
+   repaint of this element on every frame, and several mobile browsers cancel
+   a tap if the element under the finger is actively repainting when it's
+   released — this was making the Founder link fail to respond to taps. */
 .nav-founder-glow {
   color: var(--gold-400);
-  animation: founder-glow-pulse 2.6s ease-in-out infinite;
-}
-
-@keyframes founder-glow-pulse {
-  0%,
-  100% {
-    text-shadow: 0 0 8px rgba(232, 184, 75, 0.45), 0 0 18px rgba(232, 184, 75, 0.2);
-  }
-  50% {
-    text-shadow: 0 0 12px rgba(232, 184, 75, 0.8), 0 0 28px rgba(232, 184, 75, 0.4);
-  }
+  text-shadow: 0 0 10px rgba(232, 184, 75, 0.6), 0 0 22px rgba(232, 184, 75, 0.3);
 }
 
 .bg-grain {
